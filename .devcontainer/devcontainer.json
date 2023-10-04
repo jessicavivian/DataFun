@@ -4,6 +4,18 @@
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
-  "extensions": ["ms-python.python"],
-  "runsArgs": []
+  "extensions": ["ms-python.python",
+  "ms-vscode.vscode-typescript-next",
+  "ms-vscode.vscode-javascript-pack",
+  "ms-azuretools.vscode-docker",
+  "ms-azuretools.vscode-docker-compose",
+  "ms-toolsai.jupyter",
+  "GitHub.vscode-pull-request-github",
+  "ms-vsliveshare.vsliveshare",
+  "GitHub.vscode-codeql",
+  "ms-azuretools.vscode-azurefunctions"],
+  
+  "runsArgs": ["-v", "${localWorkspaceFolder}:/workspace", "-p", "8888:8888"],
+  "postCreateCommand": "pip install pandas jupyter matplotlib textblob wordcloud",
+  "overrideCommand": false
 }

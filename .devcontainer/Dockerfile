@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM mcr.microsoft.com/devcontainers/python:0-3.11-bullseye
 
 # Set the working directory
 WORKDIR /workspace
